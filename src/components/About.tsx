@@ -53,7 +53,6 @@ const About = () => {
         <div className="prose prose-lg max-w-none">
           <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
             Mahmatlı Köyü, Gümüşhane'nin Kelkit ilçesine bağlı; dağların arasında, temiz havası ve sakinliği ile öne çıkan bir Anadolu köyüdür. Yaz aylarında gurbetten dönen hemşerilerimizin gelişiyle hareketlenen, kışın ise daha sakin ve huzurlu bir atmosfere bürünen köyümüz; aile bağlarının ve komşuluk ilişkilerinin güçlü olduğu bir yerdir. Köy halkının geçim kaynağı ağırlıklı olarak tarım ve hayvancılıktır. Yaylaya çıkma kültürü, doğal ürünler, imece usulü yardımlaşma ve misafirperverlik hâlâ günlük hayatın önemli parçalarıdır.
-Köy halkı Hanefî mezhebine mensuptur ve geleneksel Anadolu değerleri yaşamın her alanında hissedilir.
 Köyümüzün muhtarı ve yöneticisi Sayın Yakup Gül ise, köyün düzeni, gelişimi ve birlik ortamının korunması için özveriyle görev yapmaktadır.
           </p>
         </div>
