@@ -22,7 +22,7 @@ const Gallery = () => {
 const galleryItems = [
     { id: 1, caption: 'Köy Manzarası', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187060/mahmatli-koyu-fotograf_bahpxd.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187048/mahmatli-koy-manzarasi_hobd9j.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187018/kelkit-mahmatli-koyu-genis-aci_sfap0u.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187061/mahmatli-koyu_tw4q12.jpg' ] },
     { id: 2, caption: 'Kışın Mahmatlı', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187063/kisin-mahmatli-manzarasi_nqsi1j.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187019/kisin-mahmatli-min_phrxsd.jpg'] },
-    { id: 3, caption: 'Bahar Yeşertisi', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187051/mahmatli-koyu-fotograflari_hsbqab.jpg'] },
+    { id: 3, caption: 'Bahar Yeşertisi', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764319389/bahar-ye%C5%9Fertisi_gj9kgu.jpg'] },
     { id: 4, caption: 'Dedenin Çayırı 4. Köprü', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187051/mahmatli-koyu-fotograflari_hsbqab.jpg'] },
     { id: 5, caption: 'Harmanda Tek Kale Futbol', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187062/kelkit-mahmatli-koyu_rq7i0p.jpg'] },
     { id: 6, caption: 'Ziyaretin Kıran', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187062/mahmatli-koyu-ziyaretin-kiran_hhnhc7.jpg'] },
