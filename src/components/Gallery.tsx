@@ -1,4 +1,4 @@
-import { Image, X, ZoomIn, ZoomOut, ChevronLeft, ChevronRight, Loader } from 'lucide-react';
+import { Image, X, ZoomIn, ZoomOut, ChevronLeft, ChevronRight, Loader, Images as ImagesIcon } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { useSeoMeta } from '../hooks/useSeoMeta';
 
@@ -19,7 +19,7 @@ const Gallery = () => {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
-const galleryItems = [
+  const galleryItems = [
     { id: 1, caption: 'Köy Manzarası', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187060/mahmatli-koyu-fotograf_bahpxd.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187048/mahmatli-koy-manzarasi_hobd9j.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187018/kelkit-mahmatli-koyu-genis-aci_sfap0u.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187061/mahmatli-koyu_tw4q12.jpg' ] },
     { id: 2, caption: 'Kışın Mahmatlı', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187063/kisin-mahmatli-manzarasi_nqsi1j.jpg', 'https://res.cloudinary.com/daqysaygc/image/upload/v1764187019/kisin-mahmatli-min_phrxsd.jpg'] },
     { id: 3, caption: 'Bahar Yeşertisi', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764319389/bahar-ye%C5%9Fertisi_gj9kgu.jpg'] },
@@ -165,12 +165,37 @@ const galleryItems = [
                       <Loader className="text-[#1B3400] animate-spin" size={40} />
                     </div>
                   )}
+                  
+                  {/* Fotoğraf Sayısı Badge'i */}
+                  {item.images.length > 1 && (
+                    <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white px-2.5 py-1 rounded-full text-xs font-medium flex items-center gap-1.5 shadow-lg">
+                      <ImagesIcon size={14} />
+                      <span>{item.images.length}</span>
+                    </div>
+                  )}
+                  
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                     <ZoomIn className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={40} />
                   </div>
                 </div>
+                
                 <div className="p-4">
-                  <p className="text-center font-medium text-gray-800">{item.caption}</p>
+                  <p className="text-center font-medium text-gray-800 mb-3">{item.caption}</p>
+                  
+                  {/* Nokta İndikatörleri */}
+                  {item.images.length > 1 && (
+                    <div className="flex justify-center gap-1.5">
+                      {item.images.map((_, index) => (
+                        <div
+                          key={index}
+                          className="w-1.5 h-1.5 rounded-full bg-gray-300"
+                          style={{
+                            backgroundColor: index === 0 ? '#1B3400' : undefined
+                          }}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
