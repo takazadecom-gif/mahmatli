@@ -27,7 +27,7 @@ const galleryItems = [
     { id: 5, caption: 'Harmanda Tek Kale Futbol', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187062/kelkit-mahmatli-koyu_rq7i0p.jpg'] },
     { id: 6, caption: 'Ziyaretin Kıran', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187062/mahmatli-koyu-ziyaretin-kiran_hhnhc7.jpg'] },
     { id: 7, caption: 'Gelincik Tarlası', images: ['https://res.cloudinary.com/daqysaygc/image/upload/v1764187592/kelkit-gelincik-tarlasi_g0zskz.jpg'] },
-    { id: 8, caption: 'Doğal Yaşam', images: ['https://res.cloudinary.com/daqysaygc/image/upload/fl_preserve_transparency/v1764187063/gumushane-mahmatli-koyu_ciuysu.jpg?_s=public-apps','https://res.cloudinary.com/daqysaygc/image/upload/v1764319121/DSC_0261_zb8ycr.jpg','https://res.cloudinary.com/daqysaygc/image/upload/v1764319255/DSC_0050_hro5cu.jpg'] },
+    { id: 8, caption: 'Doğal Yaşam', images: ['https://res.cloudinary.com/daqysaygc/image/upload/fl_preserve_transparency/v1764187063/gumushane-mahmatli-koyu_ciuysu.jpg?_s=public-apps','https://res.cloudinary.com/daqysaygc/image/upload/v1764319121/DSC_0261_zb8ycr.jpg','https://res.cloudinary.com/daqysaygc/image/upload/v1764319255/DSC_0050_hro5cu.jpg','https://res.cloudinary.com/daqysaygc/image/upload/v1764319482/DSC_0032_tt7ylb.jpg'] },
   ];
 
   const openLightbox = (images: string[]) => {
