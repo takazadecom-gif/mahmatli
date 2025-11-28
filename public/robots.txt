@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mahmatli.com/sitemap.xml
